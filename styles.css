@@ -1,0 +1,104 @@
+.container-fluid{
+    background-color: rgb(79, 158, 189);
+}
+.link{
+    color:rgba(11, 64, 99, 0.582);
+}
+.link:hover{
+    color:rgb(56, 79, 206);
+}
+::selection {
+    background: rgba(206, 152, 36, 0.507); /* WebKit/Blink Browsers */
+  }
+  
+.image{
+    width: 80%;
+    height: 80%;
+    object-position: 100% 0;
+}
+
+hr
+h1{
+    padding: 2em 2em 0em;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Fjalla One', sans-serif;
+}
+p{
+    padding: 3em 2em 3em;
+    color: #ffffff;
+    line-height: 150%;
+    font-family: 'Average', serif;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .image{
+        object-fit: cover;
+        max-height: 350px;
+        width: 85%;
+        height: 100%;
+    }
+    h1{
+        padding: 2em 2em 0em;
+        font-size: 2.3em;
+    }
+    p{
+        padding: 3em 4em 3em;
+        line-height: 150%;
+    }    
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    .image{
+        object-fit: cover;
+        max-height: 900px;
+        object-position: 100% 40%;
+        width: 65%;
+    }
+    h1{
+        font-size: 5em;
+    }
+    p{
+        font-size: 3em;
+        padding: 1.5em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .image{
+        object-fit: cover;
+        max-height: 900px;
+        object-position: 100% 40%;
+        
+    }
+    h1{
+        font-size: 5em;
+    }
+    p{
+        font-size: 2em;
+        padding: 3em 5em 3em;
+    }
+
+}
+
+/* 27 Inch monitors */
+@media (min-width: 1440px) {  
+    .image{
+        object-fit: cover;
+        max-height: 1500px;
+        object-position: 100% 40%;
+        width: 50%;
+    }
+    h1{
+        font-size: 5em;
+    }
+    p{
+        font-size: 2em;
+        padding: 3em 10em 3em;
+    }
+
+}
